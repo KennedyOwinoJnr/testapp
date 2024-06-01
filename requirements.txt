@@ -1,5 +1,4 @@
 streamlit==1.12.0  # A compatible version with protobuf < 3.20
-tensorflow==2.8.0  # A compatible version with protobuf < 5
 waitress==3.0.0
 wordcloud==1.9.3
 watchdog==4.0.0
