@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from PIL import Image
 import landpage
@@ -35,3 +36,8 @@ elif st.session_state.page == 'guest':
         bookshelf.browse_books()  # Display the browse books functionality
     elif selected_option == 'Home':
         recomend.guest_page()
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8501))  # Read the PORT environment variable, default to 8501 if not set
+    st.write(f"Starting Streamlit app on port {port}")
+    st.run(port=port)
