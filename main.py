@@ -4,6 +4,7 @@ import landpage
 import recomend
 import bookshelf
 import community
+
 # Set the page configuration
 st.set_page_config(page_title="Tomrec", page_icon=":books:", layout="wide")
 
